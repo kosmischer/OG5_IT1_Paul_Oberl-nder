@@ -16,11 +16,35 @@ public class MyActionListener implements ActionListener {
 		
 		if (obj == f.btnEinfuellen) {
 			 double fuellstand = f.myTank.getFuellstand();
+			 double maxFuellstand =f.myTank.getmaxFuellstand();
 			 fuellstand = fuellstand + 5;
 			 f.myTank.setFuellstand(fuellstand);
 
 			 f.lblFuellstand.setText(""+fuellstand);
+			 f.lblProzent.setText(""+fuellstand/maxFuellstand*100 + "%");
+			 
 		}
+		
+		if (obj == f.btnVerbrauchen) {
+			 double fuellstand = f.myTank.getFuellstand();
+			 double maxFuellstand =f.myTank.getmaxFuellstand();
+			 fuellstand = fuellstand - 2;
+			 f.myTank.setFuellstand(fuellstand);
+
+			 f.lblFuellstand.setText(""+fuellstand);
+			 f.lblProzent.setText(""+fuellstand/maxFuellstand*100 + "%");
+		}
+		
+		if (obj == f.btnZuruecksetzen) {
+			 double fuellstand = f.myTank.getFuellstand();
+			 double maxFuellstand =f.myTank.getmaxFuellstand();
+			 fuellstand = 0;
+			 f.myTank.setFuellstand(fuellstand);
+
+			 f.lblFuellstand.setText(""+fuellstand);
+			 f.lblProzent.setText(""+fuellstand/maxFuellstand*100 + "%");
+		}
+		
 
 	}
 }
