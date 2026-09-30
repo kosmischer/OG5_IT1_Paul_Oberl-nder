@@ -18,8 +18,30 @@ public class Test_Kickers {
 		
 		
 		man1.setName("Thomas");
-		man1.set
-;
+		man1.setTelNummer("123");
+		man1.setHatBeitragBezahlt(true);
+		man1.setNameMannschaft("1. OSZ_Kickers");
+		man1.setRabatt(34);
+		
+		man2.setName("Peter");
+		man2.setTelNummer("456");
+		man2.setHatBeitragBezahlt(true);
+		man2.setNameMannschaft("2. OSZ_Kickers");
+		man2.setRabatt(44);
+		
+		schi1.setName("Paul");
+		schi1.setTelNummer("789");
+		schi1.setHatBeitragBezahlt(true);
+		schi1.setAnzSpiele(145);
+
+		schi2.setName("Johan");
+		schi2.setTelNummer("134");
+		schi2.setHatBeitragBezahlt(true);
+		schi2.setAnzSpiele(4);
+		
+		schp1.setName("Johan");
+		schp1.setTelNummer("134");
+		schp1.setHatBeitragBezahlt(true);
 		
 
 	}
